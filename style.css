@@ -1,0 +1,150 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(180deg,#050014,#12002a);
+    color:white;
+}
+
+/* HEADER */
+.header{
+    text-align:center;
+    padding:20px;
+    font-size:22px;
+    font-weight:bold;
+    background:radial-gradient(circle,#ff00cc,#330066);
+}
+
+/* NAV */
+.nav{
+    display:flex;
+    justify-content:space-around;
+    background:#0c001f;
+    padding:10px;
+}
+.nav button{
+    background:none;
+    border:1px solid #ff00cc;
+    color:white;
+    padding:8px 16px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* PAGE */
+.page{
+    display:none;
+    max-width:520px;
+    margin:auto;
+    padding:15px;
+}
+.page.active{
+    display:block;
+}
+
+/* PRODUCT */
+.product{
+    background:linear-gradient(145deg,#140028,#1f003d);
+    border-radius:15px;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid rgba(255,0,200,.4);
+}
+.product h3{
+    color:#ff4dff;
+    margin:0;
+}
+.price{
+    color:#00ffea;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    margin-top:6px;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.btn-dana{
+    background:linear-gradient(45deg,#00a3ff,#0066ff);
+    color:white;
+}
+.btn-qris{
+    background:linear-gradient(45deg,#ffb000,#ff6600);
+}
+
+/* PAYMENT */
+.pay{
+    display:none;
+    margin-top:10px;
+    background:#00000055;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+}
+.pay img{
+    width:200px;
+    border-radius:10px;
+}
+
+.payment-card{
+    text-align:center;
+    padding:20px;
+}
+
+/* GLOW */
+.glow{
+    animation:glow 1.5s infinite alternate;
+}
+@keyframes glow{
+    from{box-shadow:0 0 10px #ff00cc;}
+    to{box-shadow:0 0 25px #00ffea;}
+}
+#loading{
+    position:fixed;
+    inset:0;
+    background:#050014;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.loading-foto{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow:0 0 25px #ff00cc;
+    animation:pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse{
+    from{transform:scale(0.9);}
+    to{transform:scale(1.05);}
+}
+
+.pay-box{
+    margin-top:15px;
+    padding:15px;
+    border-radius:12px;
+    background:#00000055;
+    text-align:center;
+}
+
+.btn-copy{
+    background:linear-gradient(45deg,#00ffea,#00b3a4);
+    color:black;
+    margin-top:8px;
+}
+
+.btn-download{
+    background:linear-gradient(45deg,#ff00cc,#ff6600);
+    color:white;
+    margin-top:8px;
+}
