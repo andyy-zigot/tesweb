@@ -34,6 +34,7 @@ function downloadQris(){
 }
 
 function startWeb(){
+    localStorage.setItem("welcomeDone", "yes");
     document.getElementById("welcome").classList.remove("active");
     document.getElementById("produk").classList.add("active");
 }
