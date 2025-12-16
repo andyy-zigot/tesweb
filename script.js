@@ -4,13 +4,6 @@ function startWeb(){
     document.getElementById("menuNav").style.display = "flex";
 }
 
-function startWeb(){
-
-    document.getElementById("welcome").classList.remove("active");
-    document.getElementById("produk").classList.add("active");
-    document.getElementById("menuNav").style.display = "flex";
-}
-
 function openPage(id){
     document.querySelectorAll('.page').forEach(p=>{
         p.classList.remove('active');
