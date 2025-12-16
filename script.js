@@ -33,8 +33,3 @@ function downloadQris(){
     document.body.removeChild(a);
 }
 
-window.onload = () => {
-    setTimeout(() => {
-        document.getElementById("loading").style.display = "none";
-    }, 5000); // 5 detik
-};
