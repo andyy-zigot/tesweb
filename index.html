@@ -11,7 +11,7 @@
 <!-- HEADER -->
 <div class="header glow">PAYMENT AND PRODUCT</div>
 
-<!-- HAMBURGER MENU -->
+<!-- HAMBURGER -->
 <div class="hamburger" onclick="toggleMenu()">☰</div>
 
 <!-- SIDE MENU -->
@@ -41,8 +41,8 @@
 
         <img src="https://files.catbox.moe/6zpl89.jpg" class="profile-img">
 
-        <h2 class="name">ANDY DIRMAWAN</h2>
-        <p class="role">Owner • dari web ini</p>
+        <h2 class="name">Nama Kamu</h2>
+        <p class="role">Owner • PAYMENT AND PRODUCT</p>
 
         <!-- HOBI -->
         <div class="hobby-box">
@@ -52,8 +52,23 @@
             <span>🎨 Design</span>
         </div>
 
-        <!-- KONTAK -->
-        
+        <!-- KONTAK (TERSEMBUNYI TAPI KLIK AKTIF) -->
+        <div class="contact-box">
+            <a href="https://wa.me/6281234567890" target="_blank" class="contact-btn wa">
+                📱 WhatsApp
+            </a>
+
+            <a href="https://t.me/usernamekamu" target="_blank" class="contact-btn tg">
+                👤 Telegram
+            </a>
+
+            <a href="https://t.me/channelkamu" target="_blank" class="contact-btn ch">
+                📢 Channel Telegram
+            </a>
+        </div>
+
+    </div>
+</div>
 
 <!-- PRODUK -->
 <div id="produk" class="page">
@@ -62,21 +77,7 @@
         <img src="https://picsum.photos/400/250?1" class="product-img">
         <h3>Slot Bronze</h3>
         <p>Winrate stabil</p>
-      <div class="contact-box">
-
-    <a href="https://wa.me/6285339251386" target="_blank" class="contact-btn wa">
-        📱 WhatsApp
-    </a>
-
-    <a href="https://t.me/Andyy2wak" target="_blank" class="contact-btn tg">
-        👤 Telegram
-    </a>
-
-    <a href="https://t.me/channelkamu" target="_blank" class="contact-btn ch">
-        📢 Channel Telegram
-    </a>
-
-      </div>  <div class="price">Rp 25.000</div>
+        <div class="price">Rp 25.000</div>
     </div>
 
     <div class="product glow">
@@ -131,8 +132,9 @@
         <div class="pay-box">
             <img src="https://files.catbox.moe/ioq8zm.jpg" class="logo-dana">
 
-            <p class="atas-nama">A/N: <b>A.axxx</b></p>
+            <p class="atas-nama">Atas Nama: <b>Nama Penerima</b></p>
 
+            <!-- NOMOR TERSEMBUNYI -->
             <span id="danaNumber" style="display:none;">085339251386</span>
 
             <button class="btn-copy" onclick="copyDana()">📋 Salin Nomor DANA</button>
@@ -147,10 +149,11 @@
     </div>
 </div>
 
+<!-- CREDITS -->
 <footer class="credits">
     © Andyy 2025 - 2026
 </footer>
-        
+
 <script src="script.js"></script>
 </body>
- </html>
+</html>
