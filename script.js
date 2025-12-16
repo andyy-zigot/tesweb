@@ -2,8 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if(localStorage.getItem("welcomeDone") === "yes"){
         document.getElementById("welcome").classList.remove("active");
         document.getElementById("produk").classList.add("active");
+        document.getElementById("menuNav").style.display = "flex";
     }
 });
+
+function startWeb(){
+    localStorage.setItem("welcomeDone", "yes");
+
+    document.getElementById("welcome").classList.remove("active");
+    document.getElementById("produk").classList.add("active");
+    document.getElementById("menuNav").style.display = "flex";
+}
 
 function openPage(id){
     document.querySelectorAll('.page').forEach(p=>{
@@ -12,22 +21,10 @@ function openPage(id){
     document.getElementById(id).classList.add('active');
 }
 
-function showDana(id){
-    document.getElementById("dana"+id).style.display="block";
-    document.getElementById("qris"+id).style.display="none";
-}
-
-function showQris(id){
-    document.getElementById("qris"+id).style.display="block";
-    document.getElementById("dana"+id).style.display="none";
-}
-
-/* === NOMOR 3 TARO DI SINI === */
 function copyDana(){
     const dana = document.getElementById("danaNumber").innerText;
-    navigator.clipboard.writeText(dana).then(()=>{
-        alert("Nomor DANA berhasil disalin!");
-    });
+    navigator.clipboard.writeText(dana);
+    alert("Nomor DANA berhasil disalin!");
 }
 
 function downloadQris(){
@@ -39,11 +36,3 @@ function downloadQris(){
     a.click();
     document.body.removeChild(a);
 }
-
-function startWeb(){
-    localStorage.setItem("welcomeDone", "yes");
-    document.getElementById("welcome").classList.remove("active");
-    document.getElementById("produk").classList.add("active");
-}
-
-localStorage.removeItem("welcomeDone");
