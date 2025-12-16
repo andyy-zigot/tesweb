@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", () => {
+    if(localStorage.getItem("welcomeDone") === "yes"){
+        document.getElementById("welcome").classList.remove("active");
+        document.getElementById("produk").classList.add("active");
+    }
+});
+
 function openPage(id){
     document.querySelectorAll('.page').forEach(p=>{
         p.classList.remove('active');
