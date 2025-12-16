@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WEB PAYMENT DAN PRODUK</title>
+<title>PAYMENT AND PRODUK</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- HEADER -->
-<div class="header glow">WEB PAYMENT DAN PRODUK</div>
+<div class="header glow">PAYMENT AND PRODUK</div>
 
-<!-- NAV (SEMBUNYI DI AWAL) -->
+<!-- NAV (HIDDEN AWAL) -->
 <div class="nav" id="menuNav" style="display:none;">
     <button onclick="openPage('produk')">🛒 Produk</button>
     <button onclick="openPage('payment')">💳 Payment</button>
@@ -21,12 +21,12 @@
 <div id="welcome" class="page active">
     <div class="welcome-box glow">
         <h1>👋 Selamat Datang</h1>
-        <h2>di <span class="brand">$websaatini</span></h2>
+        <h2>di <span class="brand">PAYMENT AND PRODUK</span></h2>
 
         <img src="https://files.catbox.moe/6zpl89.jpg" class="welcome-foto">
 
-        <p><b>Nama:</b> Nama Kamu</p>
-        <p><b>Role:</b> Web Developer & Designer</p>
+        <p><b>Nama:</b> ANDYY </p>
+        <p><b>HOBI:</b> HOBI NGODING DAN MAIN BOLA </p>
 
         <button class="btn-start" onclick="startWeb()">🚀 START</button>
     </div>
@@ -34,43 +34,75 @@
 
 <!-- PRODUK -->
 <div id="produk" class="page">
+
+    <!-- PRODUK TEMPLATE -->
+    <!-- GANTI FOTO PRODUK JIKA MAU -->
     <div class="product glow">
-        <h3>Slot Gacor Bronze</h3>
+        <img src="https://picsum.photos/400/250?1" class="product-img">
+        <h3>Slot Bronze</h3>
         <p>Winrate stabil</p>
         <div class="price">Rp 25.000</div>
     </div>
 
     <div class="product glow">
-        <h3>Slot Gacor Gold</h3>
-        <p>Maxwin lebih sering</p>
+        <img src="https://picsum.photos/400/250?2" class="product-img">
+        <h3>Slot Silver</h3>
+        <p>Scatter sering</p>
+        <div class="price">Rp 50.000</div>
+    </div>
+
+    <div class="product glow">
+        <img src="https://picsum.photos/400/250?3" class="product-img">
+        <h3>Slot Gold</h3>
+        <p>Maxwin cepat</p>
         <div class="price">Rp 100.000</div>
     </div>
+
+    <div class="product glow">
+        <img src="https://picsum.photos/400/250?4" class="product-img">
+        <h3>Slot Platinum</h3>
+        <p>High RTP</p>
+        <div class="price">Rp 150.000</div>
+    </div>
+
+    <div class="product glow">
+        <img src="https://picsum.photos/400/250?5" class="product-img">
+        <h3>Slot Diamond</h3>
+        <p>Maxwin sering</p>
+        <div class="price">Rp 250.000</div>
+    </div>
+
+    <div class="product glow">
+        <img src="https://picsum.photos/400/250?6" class="product-img">
+        <h3>Slot VIP</h3>
+        <p>Private access</p>
+        <div class="price">Rp 500.000</div>
+    </div>
+
+    <div class="product glow">
+        <img src="https://picsum.photos/400/250?7" class="product-img">
+        <h3>Slot Sultan</h3>
+        <p>All unlocked</p>
+        <div class="price">Rp 1.000.000</div>
+    </div>
+
 </div>
 
-<div class="product glow">
-    <img src="https://files.catbox.moe/5mko94.jpg" style="width:50%;border-radius:10px;">
-    <h3>Slot Gacor Diamond</h3>
-    <p>Winrate tertinggi</p>
-    <div class="price">Rp 250.000</div>
-</div>
-    
 <!-- PAYMENT -->
 <div id="payment" class="page">
     <div class="payment-card glow">
         <h3>💳 PAYMENT</h3>
 
-        !-- LOGO DANA -->
-  <img src="https://files.catbox.moe/ioq8zm.jpg" alt="DANA" class="logo-dana">
+        <!-- DANA -->
         <div class="pay-box">
-            <p><b>DANA</b></p>
+            <img src="https://files.catbox.moe/ioq8zm.jpg" class="logo-dana">
             <p id="danaNumber">085339251386</p>
-            <p>a/n A.axxx</p>
             <button class="btn-copy" onclick="copyDana()">📋 Salin Nomor DANA</button>
         </div>
 
+        <!-- QRIS -->
         <div class="pay-box">
-            <p><b>QRIS</b></p>
-            <img src="https://files.catbox.moe/88uppw.jpg" id="qrisImg">
+            <img src="https://files.catbox.moe/88uppw.jpg" class="qris-img" id="qrisImg">
             <button class="btn-download" onclick="downloadQris()">⬇ Unduh QRIS</button>
         </div>
     </div>
