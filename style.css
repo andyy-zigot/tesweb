@@ -150,6 +150,49 @@ button{
 .btn-copy{background:linear-gradient(45deg,#00ffea,#00b3a4);}
 .btn-download{background:linear-gradient(45deg,#ff00cc,#ff6600);}
 
+/* CREDITS */
+.credits{
+    text-align:center;
+    padding:15px 10px;
+    font-size:13px;
+    color:#ffffffaa;
+    margin-top:40px;
+}
+
+/* GLOW */
+.glow{
+    animation:glow 1.5s infinite alternate;
+}
+@keyframes glow{
+    from{box-shadow:0 0 10px #ff00cc;}
+    to{box-shadow:0 0 25px #00ffea;}
+}
+/* PAYMENT */
+.payment-card{text-align:center;}
+.pay-box{
+    margin-top:20px;
+    padding:15px;
+    border-radius:15px;
+    background:#00000055;
+}
+.logo-dana{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+}
+.qris-img{width:220px;border-radius:10px;}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    margin-top:10px;
+}
+.btn-copy{background:linear-gradient(45deg,#00ffea,#00b3a4);}
+.btn-download{background:linear-gradient(45deg,#ff00cc,#ff6600);}
+
 /* GLOW */
 .glow{
     animation:glow 1.5s infinite alternate;
