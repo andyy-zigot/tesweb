@@ -3,40 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PAYMENT AND PRODUK</title>
+<title>PAYMENT AND PRODUCT</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- HEADER -->
-<div class="header glow">PAYMENT AND PRODUK</div>
+<div class="header glow">PAYMENT AND PRODUCT</div>
 
-<!-- NAV (HIDDEN AWAL) -->
-<div class="nav" id="menuNav" style="display:none;">
-    <button onclick="openPage('produk')">🛒 Produk</button>
-    <button onclick="openPage('payment')">💳 Payment</button>
+<!-- HAMBURGER MENU -->
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+
+<!-- SIDE MENU -->
+<div class="side-menu" id="sideMenu">
+    <button onclick="openPage('portfolio');toggleMenu()">👑 Portofolio</button>
+    <button onclick="openPage('produk');toggleMenu()">🛒 Produk</button>
+    <button onclick="openPage('payment');toggleMenu()">💳 Payment</button>
 </div>
 
 <!-- WELCOME -->
 <div id="welcome" class="page active">
     <div class="welcome-box glow">
         <h1>👋 Selamat Datang</h1>
-        <h2>di <span class="brand">PAYMENT AND PRODUK</span></h2>
+        <h2>di <span class="brand">PAYMENT AND PRODUCT</span></h2>
 
         <img src="https://files.catbox.moe/6zpl89.jpg" class="welcome-foto">
 
-        <p><b>Nama:</b> ANDYY </p>
-        <p><b>HOBI:</b> HOBI NGODING DAN MAIN BOLA </p>
+        <p>Web Payment & Produk Digital</p>
 
         <button class="btn-start" onclick="startWeb()">🚀 START</button>
+    </div>
+</div>
+
+<!-- PORTOFOLIO -->
+<div id="portfolio" class="page">
+    <div class="portfolio-card glow">
+
+        <img src="https://files.catbox.moe/6zpl89.jpg" class="profile-img">
+
+        <h2 class="name">ANDY DIRMAWAN</h2>
+        <p class="role">Owner • dari web ini</p>
+
+        <!-- HOBI -->
+        <div class="hobby-box">
+            <span>🎮 Gaming</span>
+            <span>💻 Coding</span>
+            <span>📈 Trading</span>
+            <span>🎨 Design</span>
+        </div>
+
+        <!-- KONTAK -->
+        <div class="contact-box">
+            <a href="https://wa.me/6281234567890" target="_blank" class="contact-btn wa">
+                📱 WhatsApp
+                <span>w.me/6285339251386</span>
+            </a>
+
+            <a href="https://t.me/usernamekamu" target="_blank" class="contact-btn tg">
+                👤 Telegram
+                <span>@nAndyy2wak</span>
+            </a>
+
+            <a href="https://t.me/channelkamu" target="_blank" class="contact-btn ch">
+                📢 Channel Telegram
+                <span>@channelkamu</span>
+            </a>
+        </div>
+
     </div>
 </div>
 
 <!-- PRODUK -->
 <div id="produk" class="page">
 
-    <!-- PRODUK TEMPLATE -->
-    <!-- GANTI FOTO PRODUK JIKA MAU -->
     <div class="product glow">
         <img src="https://picsum.photos/400/250?1" class="product-img">
         <h3>Slot Bronze</h3>
@@ -91,27 +130,27 @@
 <!-- PAYMENT -->
 <div id="payment" class="page">
     <div class="payment-card glow">
-        <h3>💳 PAYMENT</h3>
 
         <!-- DANA -->
         <div class="pay-box">
-    <img src="https://files.catbox.moe/ioq8zm.jpg" class="logo-dana">
+            <img src="https://files.catbox.moe/ioq8zm.jpg" class="logo-dana">
 
-    <p class="atas-nama">A/N: <b>A.axxx</b></p>
+            <p class="atas-nama">A/N: <b>A.axxx</b></p>
 
-    <span id="danaNumber" style="display:none;">085339251386</span>
+            <span id="danaNumber" style="display:none;">085339251386</span>
 
-    <button class="btn-copy" onclick="copyDana()">📋 Salin Nomor DANA</button>
-</div>
+            <button class="btn-copy" onclick="copyDana()">📋 Salin Nomor DANA</button>
+        </div>
 
         <!-- QRIS -->
         <div class="pay-box">
             <img src="https://files.catbox.moe/88uppw.jpg" class="qris-img" id="qrisImg">
-            <button class="btn-download" onclick="downloadQris()">⬇ klick untuk liat </button>
+            <button class="btn-download" onclick="downloadQris()">⬇ Unduh QRIS</button>
         </div>
+
     </div>
 </div>
 
 <script src="script.js"></script>
 </body>
-</html>
+                </html>
