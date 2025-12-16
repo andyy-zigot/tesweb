@@ -45,3 +45,5 @@ function startWeb(){
     document.getElementById("welcome").classList.remove("active");
     document.getElementById("produk").classList.add("active");
 }
+
+localStorage.removeItem("welcomeDone");
