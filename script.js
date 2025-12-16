@@ -33,3 +33,30 @@ function downloadQris(){
     document.body.removeChild(a);
 }
 
+.welcome-box{
+    max-width:400px;
+    margin:80px auto;
+    padding:25px;
+    text-align:center;
+    border-radius:18px;
+    background:linear-gradient(145deg,#140028,#1f003d);
+}
+
+.welcome-foto{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:15px 0;
+    box-shadow:0 0 20px #ff00cc;
+}
+
+.brand{
+    color:#ff4dff;
+}
+
+.btn-start{
+    background:linear-gradient(45deg,#00ffea,#00b3a4);
+    margin-top:15px;
+    font-size:16px;
+        }
