@@ -1,28 +1,27 @@
 function startWeb(){
     document.getElementById("welcome").classList.remove("active");
-    document.getElementById("produk").classList.add("active");
-    document.getElementById("menuNav").style.display = "flex";
+    document.getElementById("portfolio").classList.add("active");
+}
+
+function toggleMenu(){
+    document.getElementById("sideMenu").classList.toggle("active");
 }
 
 function openPage(id){
-    document.querySelectorAll('.page').forEach(p=>{
-        p.classList.remove('active');
-    });
-    document.getElementById(id).classList.add('active');
+    document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+    document.getElementById(id).classList.add("active");
 }
 
 function copyDana(){
     const dana = document.getElementById("danaNumber").innerText;
     navigator.clipboard.writeText(dana);
-    alert("Nomor DANA berhasil disalin!");
+    alert("Nomor DANA berhasil disalin");
 }
 
 function downloadQris(){
     const img = document.getElementById("qrisImg").src;
     const a = document.createElement("a");
     a.href = img;
-    a.download = "QRIS-Payment.png";
-    document.body.appendChild(a);
+    a.download = "QRIS.png";
     a.click();
-    document.body.removeChild(a);
 }
