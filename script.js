@@ -36,5 +36,5 @@ function downloadQris(){
 window.onload = () => {
     setTimeout(() => {
         document.getElementById("loading").style.display = "none";
-    }, 4000); // 10 detik
+    }, 400); // 10 detik
 };
