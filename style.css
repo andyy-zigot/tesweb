@@ -1,6 +1,6 @@
 body{
     margin:0;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:linear-gradient(180deg,#050014,#12002a);
     color:white;
 }
@@ -35,9 +35,7 @@ body{
     margin:auto;
     padding:15px;
 }
-.page.active{
-    display:block;
-}
+.page.active{display:block;}
 
 /* WELCOME */
 .welcome-box{
@@ -53,14 +51,12 @@ body{
     height:130px;
     border-radius:50%;
     object-fit:cover;
-    margin:15px 0;
     box-shadow:0 0 20px #ff00cc;
 }
 .brand{color:#ff4dff;}
 .btn-start{
     background:linear-gradient(45deg,#00ffea,#00b3a4);
     margin-top:15px;
-    font-size:16px;
 }
 
 /* PRODUCT */
@@ -69,27 +65,43 @@ body{
     border-radius:15px;
     padding:15px;
     margin-bottom:15px;
+    text-align:center;
 }
-.product h3{color:#ff4dff;}
-.price{color:#00ffea;font-size:20px;font-weight:bold;}
+.product-img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.price{
+    color:#00ffea;
+    font-size:20px;
+    font-weight:bold;
+}
 
 /* PAYMENT */
 .payment-card{text-align:center;padding:20px;}
 .pay-box{
-    margin-top:15px;
+    margin-top:20px;
     padding:15px;
-    border-radius:12px;
+    border-radius:15px;
     background:#00000055;
 }
-.pay-box img{
-    width:200px;
+.logo-dana{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+.qris-img{
+    width:220px;
     border-radius:10px;
 }
 
 /* BUTTON */
 button{
     width:100%;
-    margin-top:8px;
+    margin-top:10px;
     padding:10px;
     border:none;
     border-radius:10px;
