@@ -1,13 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-    if(localStorage.getItem("welcomeDone") === "yes"){
-        document.getElementById("welcome").classList.remove("active");
-        document.getElementById("produk").classList.add("active");
-        document.getElementById("menuNav").style.display = "flex";
-    }
-});
+function startWeb(){
+    document.getElementById("welcome").classList.remove("active");
+    document.getElementById("produk").classList.add("active");
+    document.getElementById("menuNav").style.display = "flex";
+}
 
 function startWeb(){
-    localStorage.setItem("welcomeDone", "yes");
 
     document.getElementById("welcome").classList.remove("active");
     document.getElementById("produk").classList.add("active");
