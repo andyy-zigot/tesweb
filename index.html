@@ -82,17 +82,36 @@
 
 <!-- PAYMENT -->
 <div id="payment" class="page">
+
+    <!-- KOTAK DANA -->
     <div class="payment-card glow">
         <img src="https://files.catbox.moe/ioq8zm.jpg" class="logo-dana">
-        <p>Atas Nama: <b>Nama Penerima</b></p>
-        <span id="danaNumber" style="display:none;">085339251386</span>
-        <button class="btn-copy" onclick="copyDana()">📋 Salin Nomor DANA</button>
 
-        <img src="https://files.catbox.moe/88uppw.jpg" class="qris-img" id="qrisImg">
-        <button class="btn-download" onclick="downloadQris()">⬇ Unduh QRIS</button>
+        <p class="atas-nama">
+            Atas Nama: <b>Nama Penerima</b>
+        </p>
+
+        <span id="danaNumber" style="display:none;">
+            085339251386
+        </span>
+
+        <button class="btn-copy" onclick="copyDana()">
+            📋 Salin Nomor DANA
+        </button>
     </div>
-</div>
 
+    <!-- KOTAK QRIS -->
+    <div class="payment-card glow qris-box">
+        <img src="https://files.catbox.moe/88uppw.jpg" 
+             class="qris-img" 
+             id="qrisImg">
+
+        <button class="btn-download" onclick="downloadQris()">
+            ⬇ Unduh QRIS
+        </button>
+    </div>
+
+</div>
 <footer class="credits">© Andyy 2025 - 2026</footer>
 
 <script src="script.js"></script>
