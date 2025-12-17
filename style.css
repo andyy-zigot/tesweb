@@ -235,3 +235,10 @@ button:active, .contact-btn:active{
     transform: scale(0.95);
     box-shadow: 0 0 20px #00ffea;
 }
+
+#introText{
+    font-size:18px;
+    line-height:1.6;
+    text-align:center;
+    min-height:90px;
+}
