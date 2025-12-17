@@ -20,7 +20,7 @@ function startWeb(){
 }
 
 function typeIntroText(){
-    const text = "Selamat datang di PAYMENT AND PRODUCT.\n\nTempat terbaik untuk produk digital dan payment terpercaya.";
+    const text = "Selamat datang di PAYMENT AND PRODUCT.\nTempat terbaik untuk produk digital dan payment terpercaya.";
     const el = document.getElementById("introText");
     el.innerHTML = "";
     let i = 0;
