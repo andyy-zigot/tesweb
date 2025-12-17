@@ -52,10 +52,11 @@ body{
 /* WELCOME */
 .welcome-box{
     margin:90px auto;
-    padding:25px;
+    padding:30px;
     border-radius:20px;
     text-align:center;
     background:linear-gradient(145deg,#140028,#1f003d);
+    max-width:420px;
 }
 .welcome-foto{
     width:130px;
@@ -238,7 +239,9 @@ button:active, .contact-btn:active{
 
 #introText{
     font-size:18px;
-    line-height:1.6;
+    line-height:1.8;
     text-align:center;
-    min-height:90px;
+    white-space:normal;
+    word-break:break-word;
+    margin-bottom:15px;
 }
