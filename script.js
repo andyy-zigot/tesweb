@@ -15,21 +15,53 @@ function openPage(id){
     }, 80);
 }
 
-/* START BUTTON */
+/* START -> INTRO */
 function startWeb(){
     document.getElementById("welcome").classList.remove("active");
 
     setTimeout(()=>{
-        document.getElementById("portfolio").classList.add("active");
-        updateHeader("portfolio");
+        document.getElementById("intro").classList.add("active");
+        updateHeader("intro");
+        typeIntroText();
     }, 300);
 }
 
-/* UPDATE HEADER TITLE */
+/* EFEK KETIK */
+function typeIntroText(){
+    const text = "Selamat datang di PAYMENT AND PRODUCT. Tempat terbaik untuk produk digital dan payment terpercaya.";
+    const el = document.getElementById("introText");
+    el.innerText = "";
+    let i = 0;
+
+    const typing = setInterval(()=>{
+        el.innerText += text.charAt(i);
+        i++;
+        if(i >= text.length){
+            clearInterval(typing);
+        }
+    }, 40);
+}
+
+/* LANJUTKAN */
+function goToMenu(){
+    document.querySelectorAll(".page").forEach(p=>{
+        p.classList.remove("active");
+    });
+
+    setTimeout(()=>{
+        document.getElementById("portfolio").classList.add("active");
+        updateHeader("portfolio");
+    }, 200);
+}
+
+/* HEADER UNTUK INTRO */
 function updateHeader(page){
     const header = document.getElementById("headerTitle");
 
     switch(page){
+        case "intro":
+            header.innerText = "WELCOME";
+            break;
         case "portfolio":
             header.innerText = "PORTOFOLIO";
             break;
