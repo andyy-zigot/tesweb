@@ -1,11 +1,19 @@
-body{
+/* ===== RESET & BODY ===== */
+*{
     margin:0;
-    font-family:Arial,sans-serif;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+body{
     background:linear-gradient(180deg,#050014,#12002a);
     color:white;
 }
+html{
+    scroll-behavior:smooth;
+}
 
-/* HEADER */
+/* ===== HEADER ===== */
 .header{
     text-align:center;
     padding:18px;
@@ -13,7 +21,7 @@ body{
     background:radial-gradient(circle,#ff00cc,#330066);
 }
 
-/* HAMBURGER */
+/* ===== HAMBURGER ===== */
 .hamburger{
     position:fixed;
     top:15px;
@@ -23,7 +31,7 @@ body{
     z-index:999;
 }
 
-/* SIDE MENU */
+/* ===== SIDE MENU ===== */
 .side-menu{
     position:fixed;
     top:0;
@@ -45,11 +53,22 @@ body{
     text-align:left;
 }
 
-/* PAGE */
-.page{display:none;max-width:520px;margin:auto;padding:15px;}
+/* ===== PAGE SYSTEM ===== */
+.page{
+    display:none;
+    max-width:520px;
+    margin:auto;
+    padding:15px;
+    animation:fadeIn 0.5s ease;
+}
 .page.active{display:block;}
 
-/* WELCOME */
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(20px) scale(0.98);}
+    to{opacity:1;transform:translateY(0) scale(1);}
+}
+
+/* ===== WELCOME ===== */
 .welcome-box{
     margin:90px auto;
     padding:30px;
@@ -73,7 +92,17 @@ body{
     background:linear-gradient(45deg,#00ffea,#00b3a4);
 }
 
-/* PORTOFOLIO */
+/* ===== INTRO ===== */
+#introText{
+    font-size:18px;
+    line-height:1.8;
+    text-align:center;
+    white-space:normal;
+    word-break:break-word;
+    margin-bottom:15px;
+}
+
+/* ===== PORTOFOLIO ===== */
 .portfolio-card{
     margin:80px auto;
     padding:25px;
@@ -86,6 +115,7 @@ body{
     height:140px;
     border-radius:50%;
     box-shadow:0 0 25px #ff00cc;
+    object-fit:cover;
 }
 .hobby-box{
     display:flex;
@@ -102,13 +132,18 @@ body{
     font-size:13px;
     font-weight:bold;
 }
-.contact-box{display:flex;flex-direction:column;gap:12px;}
+.contact-box{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
 .contact-btn{
     padding:12px;
     border-radius:14px;
     text-decoration:none;
     color:white;
     font-weight:bold;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
 }
 .contact-btn.wa{background:linear-gradient(45deg,#00ff99,#00cc66);}
 .contact-btn.tg{background:linear-gradient(45deg,#00bfff,#0077ff);}
@@ -125,160 +160,42 @@ body{
     background:linear-gradient(145deg,#120020,#220040);
     border-radius:20px;
     padding:12px;
-    overflow:hidden; /* 🔒 gambar tidak keluar */
+    overflow:hidden;
     text-align:center;
 }
 
-.product-card img{
+/* WRAPPER GAMBAR (KUNCI UTAMA) */
+.product-img{
     width:100%;
-    height:180px;        /* 🔒 tinggi konsisten */
-    object-fit:cover;   /* 🔥 gambar pas di kotak */
+    height:140px;
+    overflow:hidden;
     border-radius:15px;
+    margin-bottom:10px;
+    background:#000;
+}
+.product-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
     display:block;
 }
 
+/* TEKS PRODUK */
 .product-card h4{
-    margin:10px 0 5px;
+    margin:6px 0 4px;
+    font-size:15px;
 }
-
 .product-card p{
     font-size:14px;
     opacity:0.9;
 }
-
-/* RESPONSIVE HP */
-@media (max-width:480px){
-    .products{
-        grid-template-columns:1fr;
-    }
-    .product-card img{
-        height:150px;
-    }
-}
-.price{color:#00ffea;font-size:20px;font-weight:bold;}
-
-/* PAYMENT */
-.payment-card{text-align:center;}
-.pay-box{
-    margin-top:20px;
-    padding:15px;
-    border-radius:15px;
-    background:#00000055;
-}
-.logo-dana{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-}
-.qris-img{width:220px;border-radius:10px;}
-
-/* BUTTON */
-button{
-    width:100%;
-    padding:10px;
-    border:none;
-    border-radius:10px;
-    margin-top:10px;
-}
-.btn-copy{background:linear-gradient(45deg,#00ffea,#00b3a4);}
-.btn-download{background:linear-gradient(45deg,#ff00cc,#ff6600);}
-
-/* CREDITS */
-.credits{
-    text-align:center;
-    padding:15px 10px;
-    font-size:13px;
-    color:#ffffffaa;
-    margin-top:40px;
+.price{
+    color:#00ffea;
+    font-size:20px;
+    font-weight:bold;
 }
 
-/* GLOW */
-.glow{
-    animation:glow 1.5s infinite alternate;
-}
-@keyframes glow{
-    from{box-shadow:0 0 10px #ff00cc;}
-    to{box-shadow:0 0 25px #00ffea;}
-}
-/* PAYMENT */
-.payment-card{text-align:center;}
-.pay-box{
-    margin-top:20px;
-    padding:15px;
-    border-radius:15px;
-    background:#00000055;
-}
-.logo-dana{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-}
-.qris-img{width:220px;border-radius:10px;}
-
-/* BUTTON */
-button{
-    width:100%;
-    padding:10px;
-    border:none;
-    border-radius:10px;
-    margin-top:10px;
-}
-.btn-copy{background:linear-gradient(45deg,#00ffea,#00b3a4);}
-.btn-download{background:linear-gradient(45deg,#ff00cc,#ff6600);}
-
-/* GLOW */
-.glow{
-    animation:glow 1.5s infinite alternate;
-}
-@keyframes glow{
-    from{box-shadow:0 0 10px #ff00cc;}
-    to{box-shadow:0 0 25px #00ffea;}
-}
-
-.credits{
-    text-align:center;
-    padding:15px 10px;
-    font-size:13px;
-    color:#ffffffaa;
-    margin-top:40px;
-}
-
-/* ANIMASI PAGE */
-.page{
-    animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform: translateY(20px) scale(0.98);
-    }
-    to{
-        opacity:1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-/* ANIMASI TOMBOL */
-button, .contact-btn{
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-button:active, .contact-btn:active{
-    transform: scale(0.95);
-    box-shadow: 0 0 20px #00ffea;
-}
-
-#introText{
-    font-size:18px;
-    line-height:1.8;
-    text-align:center;
-    white-space:normal;
-    word-break:break-word;
-    margin-bottom:15px;
-}
-
-/* PAYMENT BOX */
+/* ===== PAYMENT ===== */
 .payment-card{
     margin:20px auto;
     padding:20px;
@@ -287,7 +204,64 @@ button:active, .contact-btn:active{
     text-align:center;
     background:linear-gradient(145deg,#140028,#1f003d);
 }
-
-.qris-box{
-    margin-top:25px;
+.pay-box{
+    margin-top:20px;
+    padding:15px;
+    border-radius:15px;
+    background:#00000055;
 }
+.logo-dana{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+}
+.qris-img{
+    width:220px;
+    border-radius:10px;
+}
+.qris-box{margin-top:25px;}
+
+/* ===== BUTTON ===== */
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    margin-top:10px;
+    cursor:pointer;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+button:active{
+    transform:scale(0.95);
+    box-shadow:0 0 20px #00ffea;
+}
+.btn-copy{background:linear-gradient(45deg,#00ffea,#00b3a4);}
+.btn-download{background:linear-gradient(45deg,#ff00cc,#ff6600);}
+
+/* ===== GLOW ===== */
+.glow{
+    animation:glow 1.5s infinite alternate;
+}
+@keyframes glow{
+    from{box-shadow:0 0 10px #ff00cc;}
+    to{box-shadow:0 0 25px #00ffea;}
+}
+
+/* ===== CREDITS ===== */
+.credits{
+    text-align:center;
+    padding:15px 10px;
+    font-size:13px;
+    color:#ffffffaa;
+    margin-top:40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:480px){
+    .products{
+        grid-template-columns:1fr;
+    }
+    .product-img{
+        height:120px;
+    }
+                               }
