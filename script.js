@@ -1,12 +1,10 @@
-function openPage(id){
-    document.querySelectorAll(".page").forEach(p=>{
-        p.classList.remove("active");
-    });
+function startWeb(){
+    document.getElementById("welcome").classList.remove("active");
 
     setTimeout(()=>{
-        document.getElementById(id).classList.add("active");
-        updateHeader(id);
-    }, 80);
+        document.getElementById("portfolio").classList.add("active");
+        updateHeader("portfolio");
+    }, 300);
 }
 
 function toggleMenu(){
