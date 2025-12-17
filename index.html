@@ -10,6 +10,7 @@
 
 <!-- HEADER -->
 <div class="header glow" id="headerTitle">PAYMENT AND PRODUCT</div>
+
 <!-- HAMBURGER -->
 <div class="hamburger" onclick="toggleMenu()">☰</div>
 
@@ -22,7 +23,6 @@
 
 <!-- WELCOME -->
 <div id="welcome" class="page active">
-
     <div class="welcome-box glow">
         <h1>👋 Selamat Datang</h1>
         <h2>di <span class="brand">PAYMENT AND PRODUCT</span></h2>
@@ -40,23 +40,20 @@
     <div class="welcome-box glow">
         <h2 id="introText"></h2>
 
-        <button class="btn-start" onclick="goToMenu()" style="margin-top:20px;">
+        <button class="btn-start" onclick="goToMenu()">
             ➡ Lanjutkan
         </button>
     </div>
 </div>
-    
-    
+
 <!-- PORTOFOLIO -->
 <div id="portfolio" class="page">
     <div class="portfolio-card glow">
-
         <img src="https://files.catbox.moe/6zpl89.jpg" class="profile-img">
 
         <h2 class="name">Nama Kamu</h2>
         <p class="role">Owner • PAYMENT AND PRODUCT</p>
 
-        <!-- HOBI -->
         <div class="hobby-box">
             <span>🎮 Gaming</span>
             <span>💻 Coding</span>
@@ -64,107 +61,39 @@
             <span>🎨 Design</span>
         </div>
 
-        <!-- KONTAK (TERSEMBUNYI TAPI KLIK AKTIF) -->
         <div class="contact-box">
-            <a href="https://wa.me/6281234567890" target="_blank" class="contact-btn wa">
-                📱 WhatsApp
-            </a>
-
-            <a href="https://t.me/usernamekamu" target="_blank" class="contact-btn tg">
-                👤 Telegram
-            </a>
-
-            <a href="https://t.me/channelkamu" target="_blank" class="contact-btn ch">
-                📢 Channel Telegram
-            </a>
+            <a href="https://wa.me/6281234567890" target="_blank" class="contact-btn wa">📱 WhatsApp</a>
+            <a href="https://t.me/usernamekamu" target="_blank" class="contact-btn tg">👤 Telegram</a>
+            <a href="https://t.me/channelkamu" target="_blank" class="contact-btn ch">📢 Channel Telegram</a>
         </div>
-
     </div>
 </div>
 
 <!-- PRODUK -->
 <div id="produk" class="page">
-
-    <div class="product glow">
-        <img src="https://picsum.photos/400/250?1" class="product-img">
-        <h3>Slot Bronze</h3>
-        <p>Winrate stabil</p>
-        <div class="price">Rp 25.000</div>
-    </div>
-
-    <div class="product glow">
-        <img src="https://picsum.photos/400/250?2" class="product-img">
-        <h3>Slot Silver</h3>
-        <p>Scatter sering</p>
-        <div class="price">Rp 50.000</div>
-    </div>
-
-    <div class="product glow">
-        <img src="https://picsum.photos/400/250?3" class="product-img">
-        <h3>Slot Gold</h3>
-        <p>Maxwin cepat</p>
-        <div class="price">Rp 100.000</div>
-    </div>
-
-    <div class="product glow">
-        <img src="https://picsum.photos/400/250?4" class="product-img">
-        <h3>Slot Platinum</h3>
-        <p>High RTP</p>
-        <div class="price">Rp 150.000</div>
-    </div>
-
-    <div class="product glow">
-        <img src="https://picsum.photos/400/250?5" class="product-img">
-        <h3>Slot Diamond</h3>
-        <p>Maxwin sering</p>
-        <div class="price">Rp 250.000</div>
-    </div>
-
-    <div class="product glow">
-        <img src="https://picsum.photos/400/250?6" class="product-img">
-        <h3>Slot VIP</h3>
-        <p>Private access</p>
-        <div class="price">Rp 500.000</div>
-    </div>
-
-    <div class="product glow">
-        <img src="https://picsum.photos/400/250?7" class="product-img">
-        <h3>Slot Sultan</h3>
-        <p>All unlocked</p>
-        <div class="price">Rp 1.000.000</div>
-    </div>
-
+    <div class="product glow"><img src="https://picsum.photos/400/250?1"><h3>Produk 1</h3><div class="price">Rp 25.000</div></div>
+    <div class="product glow"><img src="https://picsum.photos/400/250?2"><h3>Produk 2</h3><div class="price">Rp 50.000</div></div>
+    <div class="product glow"><img src="https://picsum.photos/400/250?3"><h3>Produk 3</h3><div class="price">Rp 100.000</div></div>
+    <div class="product glow"><img src="https://picsum.photos/400/250?4"><h3>Produk 4</h3><div class="price">Rp 150.000</div></div>
+    <div class="product glow"><img src="https://picsum.photos/400/250?5"><h3>Produk 5</h3><div class="price">Rp 250.000</div></div>
+    <div class="product glow"><img src="https://picsum.photos/400/250?6"><h3>Produk 6</h3><div class="price">Rp 500.000</div></div>
+    <div class="product glow"><img src="https://picsum.photos/400/250?7"><h3>Produk 7</h3><div class="price">Rp 1.000.000</div></div>
 </div>
 
 <!-- PAYMENT -->
 <div id="payment" class="page">
     <div class="payment-card glow">
+        <img src="https://files.catbox.moe/ioq8zm.jpg" class="logo-dana">
+        <p>Atas Nama: <b>Nama Penerima</b></p>
+        <span id="danaNumber" style="display:none;">085339251386</span>
+        <button class="btn-copy" onclick="copyDana()">📋 Salin Nomor DANA</button>
 
-        <!-- DANA -->
-        <div class="pay-box">
-            <img src="https://files.catbox.moe/ioq8zm.jpg" class="logo-dana">
-
-            <p class="atas-nama">Atas Nama: <b>Nama Penerima</b></p>
-
-            <!-- NOMOR TERSEMBUNYI -->
-            <span id="danaNumber" style="display:none;">085339251386</span>
-
-            <button class="btn-copy" onclick="copyDana()">📋 Salin Nomor DANA</button>
-        </div>
-
-        <!-- QRIS -->
-        <div class="pay-box">
-            <img src="https://files.catbox.moe/88uppw.jpg" class="qris-img" id="qrisImg">
-            <button class="btn-download" onclick="downloadQris()">⬇ Unduh QRIS</button>
-        </div>
-
+        <img src="https://files.catbox.moe/88uppw.jpg" class="qris-img" id="qrisImg">
+        <button class="btn-download" onclick="downloadQris()">⬇ Unduh QRIS</button>
     </div>
 </div>
 
-<!-- CREDITS -->
-<footer class="credits">
-    © Andyy 2025 - 2026
-</footer>
+<footer class="credits">© Andyy 2025 - 2026</footer>
 
 <script src="script.js"></script>
 </body>
