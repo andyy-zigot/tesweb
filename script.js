@@ -20,14 +20,16 @@ function startWeb(){
 }
 
 function typeIntroText(){
-    const text="Selamat datang di PAYMENT AND PRODUCT. Tempat terbaik untuk produk digital dan payment terpercaya.";
-    const el=document.getElementById("introText");
-    el.innerText="";
-    let i=0;
-    const t=setInterval(()=>{
-        el.innerText+=text[i++];
-        if(i>=text.length) clearInterval(t);
-    },40);
+    const text = "Selamat datang di PAYMENT AND PRODUCT.\n\nTempat terbaik untuk produk digital dan payment terpercaya.";
+    const el = document.getElementById("introText");
+    el.innerHTML = "";
+    let i = 0;
+
+    const t = setInterval(()=>{
+        el.innerHTML += text[i] === "\n" ? "<br>" : text[i];
+        i++;
+        if(i >= text.length) clearInterval(t);
+    }, 40);
 }
 
 function goToMenu(){
