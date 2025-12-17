@@ -209,3 +209,29 @@ button{
     color:#ffffffaa;
     margin-top:40px;
 }
+
+/* ANIMASI PAGE */
+.page{
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(20px) scale(0.98);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ANIMASI TOMBOL */
+button, .contact-btn{
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:active, .contact-btn:active{
+    transform: scale(0.95);
+    box-shadow: 0 0 20px #00ffea;
+}
