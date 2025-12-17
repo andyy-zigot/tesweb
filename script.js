@@ -1,15 +1,22 @@
 function startWeb(){
     document.getElementById("welcome").classList.remove("active");
-    document.getElementById("portfolio").classList.add("active");
-}
 
+    setTimeout(()=>{
+        document.getElementById("portfolio").classList.add("active");
+    }, 300);
+}
 function toggleMenu(){
     document.getElementById("sideMenu").classList.toggle("active");
 }
 
 function openPage(id){
-    document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
-    document.getElementById(id).classList.add("active");
+    document.querySelectorAll(".page").forEach(p=>{
+        p.classList.remove("active");
+    });
+
+    setTimeout(()=>{
+        document.getElementById(id).classList.add("active");
+    }, 50);
 }
 
 function copyDana(){
