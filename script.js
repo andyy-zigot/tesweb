@@ -56,3 +56,22 @@ function downloadQris(){
     a.download="QRIS.png";
     a.click();
 }
+
+let musicPlaying = false;
+const music = document.getElementById("bgMusic");
+
+function playMusic(){
+    music.volume = 0.4; // 40%
+    music.play();
+    musicPlaying = true;
+}
+
+function toggleMusic(){
+    if(musicPlaying){
+        music.pause();
+        musicPlaying = false;
+    }else{
+        music.play();
+        musicPlaying = true;
+    }
+}
