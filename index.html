@@ -8,6 +8,11 @@
 </head>
 <body>
 
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="https://files.catbox.moe/7hhvjk.mp3" type="audio/mpeg">
+</audio>
+
 <!-- HEADER -->
 <div class="header glow" id="headerTitle">PAYMENT AND PRODUCT</div>
 
@@ -31,7 +36,7 @@
 
         <p>Web Payment & Produk Digital</p>
 
-        <button class="btn-start" onclick="startWeb()">🚀 START</button>
+        <button class="btn-start" onclick="startWeb(); playMusic()">🚀 START</button>
     </div>
 </div>
 
@@ -53,6 +58,7 @@
 
         <h2 class="name">ANDY DIRMAWAN</h2>
         <p class="role">Owner • PAYMENT AND PRODUCT</p>
+        <button class="btn-start" onclick="toggleMusic()">🎵 Musik ON / OFF</button>
 
         <div class="hobby-box">
             <span>🎮 Gaming</span>
